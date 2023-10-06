@@ -326,6 +326,7 @@ img {
   height: .25rem;
   border-radius: .5rem;
   z-index: var(--z-back);
+  transition: width 0.6s linear;
 }
 
 .skills__html {
@@ -426,11 +427,14 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
+
 }
+
 
 .footer__copy a {
   cursor: pointer;
   color: white;
+  font-weight: normal;
 }
 
 /* ===== MEDIA QUERIES=====*/
