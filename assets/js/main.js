@@ -59,6 +59,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 let section = document.getElementById("skills")
 let spans = document.querySelectorAll(".skills__data .skills__bar")
+let span = document.querySelector(".up")
 
 window.onscroll = function(){
     if(window.scrollY >= section.offsetTop + 100){
@@ -67,4 +68,13 @@ window.onscroll = function(){
             span.style.width = span.dataset.width
         })
     }
+    this.scrollY >=700 ?span.classList.add("show") : span.classList.remove("show")
+}
+
+
+span.onclick = function(){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth",
+    })
 }

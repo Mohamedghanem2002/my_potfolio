@@ -212,6 +212,41 @@ img {
   margin-bottom: var(--mb-5);
 }
 
+/* | */
+/* | */
+.home__title p {
+  font-size: 32px;
+  width: 250px;
+  border-right: 2px solid var(--first-color);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: control-width 2s steps(12) 1s both, blink 0.5s infinite;
+}
+
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 250px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: var(--main-color);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* | */
+/* | */
+
+
 .home__title-color {
   color: var(--first-color);
 }
@@ -586,3 +621,30 @@ img {
     width: 450px;
   }
 }
+
+
+/* scroll */
+
+
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: -30px;
+  background-color: var(--first-color);
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  border-radius: 4px;
+  font-family: Arial, Tahoma;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 30px;
+  text-align: center;
+  height: 45px;
+}
+
+.up.show {
+  right: 30px;
+}
+
+/* scroll */
