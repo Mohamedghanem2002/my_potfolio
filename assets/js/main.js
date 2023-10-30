@@ -62,8 +62,7 @@ let spans = document.querySelectorAll(".skills__data .skills__bar")
 let span = document.querySelector(".up")
 
 window.onscroll = function(){
-    if(window.scrollY >= section.offsetTop + 100){
-      console.log("mmmmmm")
+    if(window.scrollY >= section.offsetTop ){
         spans.forEach((span)=>{
             span.style.width = span.dataset.width
         })
