@@ -216,11 +216,11 @@ img {
 /* | */
 .home__title p {
   font-size: 32px;
-  width: 235px;
+  width: 345px;
   border-right: 2px solid var(--first-color);
   overflow: hidden;
   white-space: nowrap;
-  animation: control-width 2s steps(12) 1s both, blink 0.5s infinite;
+  animation: control-width 3s steps(19) 1s both, blink 0.5s infinite;
 }
 
 @keyframes control-width {
@@ -229,7 +229,7 @@ img {
   }
 
   to {
-    width: 235px;
+    width: 345px;
   }
 }
 
