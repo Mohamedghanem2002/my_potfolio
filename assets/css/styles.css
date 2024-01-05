@@ -215,8 +215,8 @@ img {
 /* | */
 /* | */
 .home__title p {
-  font-size: 32px;
-  width: 345px;
+  font-size: 28px;
+  width: 300px;
   border-right: 2px solid var(--first-color);
   overflow: hidden;
   white-space: nowrap;
@@ -229,7 +229,7 @@ img {
   }
 
   to {
-    width: 345px;
+    width: 300px;
   }
 }
 
